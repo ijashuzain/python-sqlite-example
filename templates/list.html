@@ -1,0 +1,21 @@
+<html>
+
+    <body>
+        <table border=1>
+            <tr>
+                <th>Name</th>
+                <th>Username</th>
+                <th>Password</th>
+            </tr>
+            {% for row in rows %}
+            <tr>
+                <td>{{ row["name"] }}</td>
+                <td>{{ row["username"] }}</td>
+                <td>{{ row["password"] }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <p><a href="/">Go Back To Home Page</a></p>
+    </body>
+
+</html>

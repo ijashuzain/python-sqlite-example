@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
+</head>
+<body>
+    <form action="{{ url_for('addrec') }}" method="POST">
+        <h3>Student Information</h3>
+        <p>Name</p>
+        <p><input type="text" name="nm"></p>
+
+        <p>Username</p>
+        <p><input type="text" name="user"></p>
+
+        <p>Password</p>
+        <p><input type="password" name="pass"></p>
+
+        <p><input type="submit" value="submit"></p>
+    </form>
+    <p><a href="/">Go Back To Home Page</a></p>
+</body>
+</html>
