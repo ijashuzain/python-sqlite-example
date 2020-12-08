@@ -64,8 +64,8 @@ def addrec():
                 cur.execute(
                     "INSERT INTO students (name,username,password) VALUES(?,?,?)", (nm, usr, pwd))
                 con.commit()
-
                 msg = "Record Added Successfully"
+                
         except:
             con.rollback()
             msg = "Error in Insertion"
